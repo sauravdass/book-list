@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>book list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-8 col-md-10 m-auto">
+                <h1 class="text-center text-capitalize text-warning mt-3"><i class="fas fa-book-open"></i> book list
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 m-auto">
+                <form action="" id="form">
+                    <input type="text" id="bookName" class="form-control mb-2" placeholder="Book Name">
+                    <input type="text" id="authorName" class="form-control mb-2" placeholder="Author Name">
+                    <input type="text" id="year" class="form-control mb-3" placeholder="Year">
+                    <button type="submit" id="submitBtn"
+                        class="btn btn-block btn-warning text-capitalize text-white">add</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 m-auto">
+                <table class="table table-striped text-center text-capitalize">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>author</th>
+                            <th>year</th>
+                            <th>remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
